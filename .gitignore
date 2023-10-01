@@ -1,1 +1,8 @@
 artifacts/*
+*.cpython-*
+*__pycache__*
+.pytest_cache/
+build*/
+logs/running_logs.log
+
+.gitignore

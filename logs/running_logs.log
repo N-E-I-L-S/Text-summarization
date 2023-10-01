@@ -65,3 +65,707 @@ x==========x]
 [2023-10-01 12:21:52,151: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2023-10-01 12:44:56,133: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 12:44:56,139: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:44:56,141: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:44:56,141: INFO: common: created directory at: artifacts]
+[2023-10-01 12:44:56,141: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 12:44:56,142: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 12:44:56,237: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 12:44:56,238: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 12:44:56,239: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:44:56,240: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:44:56,241: INFO: common: created directory at: artifacts]
+[2023-10-01 12:44:56,241: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 12:44:56,242: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 12:44:56,242: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 12:44:56,242: ERROR: main: name 'DataTransformationTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 31, in <module>
+    data_transformation = DataTransformationTrainingPipeline()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'DataTransformationTrainingPipeline' is not defined
+[2023-10-01 12:45:39,068: INFO: file_utils: PyTorch version 2.0.1+cpu available.]
+[2023-10-01 12:45:40,260: INFO: modeling_xlnet: Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .]
+[2023-10-01 12:45:40,638: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-10-01 12:45:40,638: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-01 12:45:41,587: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 12:45:41,589: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:45:41,590: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:45:41,591: INFO: common: created directory at: artifacts]
+[2023-10-01 12:45:41,591: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 12:45:41,591: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 12:45:41,676: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 12:45:41,677: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 12:45:41,678: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:45:41,679: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:45:41,680: INFO: common: created directory at: artifacts]
+[2023-10-01 12:45:41,680: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 12:45:41,681: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 12:45:41,681: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 12:45:41,682: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:45:41,684: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:45:41,684: INFO: common: created directory at: artifacts]
+[2023-10-01 12:45:41,685: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 12:45:41,685: ERROR: main: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl']
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 34, in <module>
+    data_transformation.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\transformers\tokenization_auto.py", line 122, in from_pretrained
+    raise ValueError("Unrecognized model identifier in {}. Should contains one of "
+ValueError: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl'
+[2023-10-01 12:45:59,452: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:45:59,454: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:45:59,455: INFO: common: created directory at: artifacts]
+[2023-10-01 12:45:59,455: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 12:46:23,911: INFO: file_utils: PyTorch version 2.0.1+cpu available.]
+[2023-10-01 12:46:24,600: INFO: modeling_xlnet: Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .]
+[2023-10-01 12:46:24,787: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-10-01 12:46:24,789: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-01 12:46:25,410: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 12:46:25,412: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:46:25,413: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:46:25,414: INFO: common: created directory at: artifacts]
+[2023-10-01 12:46:25,414: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 12:46:25,415: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 12:46:25,504: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 12:46:25,504: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 12:46:25,506: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:46:25,507: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:46:25,507: INFO: common: created directory at: artifacts]
+[2023-10-01 12:46:25,508: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 12:46:25,509: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 12:46:25,509: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 12:46:25,510: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:46:25,511: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:46:25,512: INFO: common: created directory at: artifacts]
+[2023-10-01 12:46:25,512: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 12:46:25,512: ERROR: main: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl']
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 34, in <module>
+    data_transformation.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\transformers\tokenization_auto.py", line 122, in from_pretrained
+    raise ValueError("Unrecognized model identifier in {}. Should contains one of "
+ValueError: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl'
+[2023-10-01 12:47:27,547: INFO: file_utils: PyTorch version 2.0.1+cpu available.]
+[2023-10-01 12:47:28,233: INFO: modeling_xlnet: Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .]
+[2023-10-01 12:47:28,437: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-10-01 12:47:28,438: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-01 12:47:29,036: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 12:47:29,039: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:47:29,044: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:47:29,045: INFO: common: created directory at: artifacts]
+[2023-10-01 12:47:29,045: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 12:47:29,045: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 12:47:29,139: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 12:47:29,140: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 12:47:29,141: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:47:29,142: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:47:29,143: INFO: common: created directory at: artifacts]
+[2023-10-01 12:47:29,143: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 12:47:29,144: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 12:47:29,144: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 12:47:29,145: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:47:29,146: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:47:29,147: INFO: common: created directory at: artifacts]
+[2023-10-01 12:47:29,147: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 12:47:29,147: ERROR: main: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl']
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 34, in <module>
+    data_transformation.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\transformers\tokenization_auto.py", line 122, in from_pretrained
+    raise ValueError("Unrecognized model identifier in {}. Should contains one of "
+ValueError: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl'
+[2023-10-01 12:54:10,240: INFO: file_utils: PyTorch version 2.0.1+cpu available.]
+[2023-10-01 12:54:11,234: INFO: modeling_xlnet: Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .]
+[2023-10-01 12:54:11,554: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-10-01 12:54:11,555: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-01 12:54:12,337: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 12:54:12,339: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:54:12,340: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:54:12,341: INFO: common: created directory at: artifacts]
+[2023-10-01 12:54:12,341: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 12:54:12,341: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 12:54:12,445: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 12:54:12,446: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 12:54:12,448: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:54:12,449: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:54:12,449: INFO: common: created directory at: artifacts]
+[2023-10-01 12:54:12,449: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 12:54:12,450: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 12:54:12,451: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 12:54:12,452: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 12:54:12,453: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 12:54:12,453: INFO: common: created directory at: artifacts]
+[2023-10-01 12:54:12,454: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 12:54:12,454: ERROR: main: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl']
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 34, in <module>
+    data_transformation.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\transformers\tokenization_auto.py", line 122, in from_pretrained
+    raise ValueError("Unrecognized model identifier in {}. Should contains one of "
+ValueError: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl'
+[2023-10-01 13:00:47,391: INFO: file_utils: PyTorch version 2.0.1+cpu available.]
+[2023-10-01 13:00:48,056: INFO: modeling_xlnet: Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .]
+[2023-10-01 13:00:48,239: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-10-01 13:00:48,240: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-01 13:00:48,826: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 13:00:48,828: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:00:48,829: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:00:48,830: INFO: common: created directory at: artifacts]
+[2023-10-01 13:00:48,830: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 13:00:48,830: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 13:00:48,916: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:00:48,916: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 13:00:48,918: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:00:48,919: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:00:48,919: INFO: common: created directory at: artifacts]
+[2023-10-01 13:00:48,920: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 13:00:48,920: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:00:48,921: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 13:00:48,922: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:00:48,923: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:00:48,923: INFO: common: created directory at: artifacts]
+[2023-10-01 13:00:48,924: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 13:00:48,924: ERROR: main: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl']
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 34, in <module>
+    data_transformation.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\transformers\tokenization_auto.py", line 122, in from_pretrained
+    raise ValueError("Unrecognized model identifier in {}. Should contains one of "
+ValueError: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl'
+[2023-10-01 13:02:44,454: INFO: file_utils: PyTorch version 2.0.1+cpu available.]
+[2023-10-01 13:02:45,141: INFO: modeling_xlnet: Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .]
+[2023-10-01 13:02:45,337: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-10-01 13:02:45,337: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-01 13:02:45,947: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 13:02:45,948: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:02:45,950: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:02:45,950: INFO: common: created directory at: artifacts]
+[2023-10-01 13:02:45,950: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 13:02:45,951: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 13:02:46,035: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:02:46,036: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 13:02:46,037: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:02:46,038: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:02:46,039: INFO: common: created directory at: artifacts]
+[2023-10-01 13:02:46,039: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 13:02:46,040: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:02:46,040: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 13:02:46,042: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:02:46,043: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:02:46,043: INFO: common: created directory at: artifacts]
+[2023-10-01 13:02:46,043: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 13:02:46,043: ERROR: main: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl']
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 34, in <module>
+    data_transformation.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\transformers\tokenization_auto.py", line 122, in from_pretrained
+    raise ValueError("Unrecognized model identifier in {}. Should contains one of "
+ValueError: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl'
+[2023-10-01 13:07:33,628: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:07:33,630: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:07:33,630: INFO: common: created directory at: artifacts]
+[2023-10-01 13:07:33,631: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 13:09:06,864: INFO: file_utils: PyTorch version 2.0.1+cpu available.]
+[2023-10-01 13:09:07,569: INFO: modeling_xlnet: Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .]
+[2023-10-01 13:09:07,757: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-10-01 13:09:07,758: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-01 13:09:08,354: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 13:09:08,356: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:09:08,358: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:09:08,358: INFO: common: created directory at: artifacts]
+[2023-10-01 13:09:08,359: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 13:09:50,924: ERROR: main: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\ProgramData\Anaconda3\Lib\http\client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\ProgramData\Anaconda3\Lib\http\client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\ProgramData\Anaconda3\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\ProgramData\Anaconda3\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\ProgramData\Anaconda3\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\ProgramData\Anaconda3\Lib\http\client.py", line 1451, in connect
+    super().connect()
+  File "C:\ProgramData\Anaconda3\Lib\http\client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\ProgramData\Anaconda3\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 12, in <module>
+    data_ingestion.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_ingestion.py", line 17, in download_file
+    filename, headers = request.urlretrieve(
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 557, in error
+    result = self._call_chain(*args)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[2023-10-01 13:11:19,008: INFO: file_utils: PyTorch version 2.0.1+cpu available.]
+[2023-10-01 13:11:19,936: INFO: modeling_xlnet: Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .]
+[2023-10-01 13:11:20,196: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-10-01 13:11:20,197: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-01 13:11:20,989: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 13:11:20,992: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:11:20,994: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:11:20,994: INFO: common: created directory at: artifacts]
+[2023-10-01 13:11:20,995: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 13:11:32,204: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: A2D2:254532:1DA977:251E49:651922A1
+Accept-Ranges: bytes
+Date: Sun, 01 Oct 2023 07:41:22 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg1283-QPG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1696146082.177046,VS0,VE812
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 470f467d105a514d8c6fe6d5ddd315fe9c4550e8
+Expires: Sun, 01 Oct 2023 07:46:22 GMT
+Source-Age: 0
+
+]
+[2023-10-01 13:11:32,376: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:11:32,377: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 13:11:32,380: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:11:32,383: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:11:32,384: INFO: common: created directory at: artifacts]
+[2023-10-01 13:11:32,386: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 13:11:32,389: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:11:32,389: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 13:11:32,393: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:11:32,395: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:11:32,396: INFO: common: created directory at: artifacts]
+[2023-10-01 13:11:32,397: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 13:11:32,398: ERROR: main: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl']
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 34, in <module>
+    data_transformation.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\transformers\tokenization_auto.py", line 122, in from_pretrained
+    raise ValueError("Unrecognized model identifier in {}. Should contains one of "
+ValueError: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl'
+[2023-10-01 13:19:20,325: INFO: file_utils: PyTorch version 2.0.1+cpu available.]
+[2023-10-01 13:19:21,388: INFO: modeling_xlnet: Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .]
+[2023-10-01 13:19:21,670: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-10-01 13:19:21,670: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-01 13:19:22,549: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 13:19:22,552: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:19:22,553: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:19:22,554: INFO: common: created directory at: artifacts]
+[2023-10-01 13:19:22,554: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 13:19:22,555: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 13:19:22,663: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:19:22,664: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 13:19:22,666: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:19:22,668: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:19:22,668: INFO: common: created directory at: artifacts]
+[2023-10-01 13:19:22,669: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 13:19:22,670: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:19:22,671: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 13:19:22,673: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:19:22,675: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:19:22,675: INFO: common: created directory at: artifacts]
+[2023-10-01 13:19:22,676: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 13:19:22,676: ERROR: main: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl']
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 34, in <module>
+    data_transformation.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\Lib\site-packages\transformers\tokenization_auto.py", line 122, in from_pretrained
+    raise ValueError("Unrecognized model identifier in {}. Should contains one of "
+ValueError: Unrecognized model identifier in google/pegasus-cnn_dailymail. Should contains one of 'bert', 'openai-gpt', 'gpt2', 'transfo-xl', 'xlnet', 'xlm', 'roberta', 'ctrl'
+[2023-10-01 13:20:21,560: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 13:20:21,563: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:20:21,565: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:20:21,565: INFO: common: created directory at: artifacts]
+[2023-10-01 13:20:21,566: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 13:20:21,567: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 13:20:21,678: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:20:21,679: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 13:20:21,681: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:20:21,683: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:20:21,683: INFO: common: created directory at: artifacts]
+[2023-10-01 13:20:21,684: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 13:20:21,685: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:20:21,686: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 13:20:21,688: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:20:21,689: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:20:21,690: INFO: common: created directory at: artifacts]
+[2023-10-01 13:20:21,690: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 13:20:26,385: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:28:49,266: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:28:49,269: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:28:49,270: INFO: common: created directory at: artifacts]
+[2023-10-01 13:29:33,845: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:29:33,848: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:29:33,849: INFO: common: created directory at: artifacts]
+[2023-10-01 13:29:33,850: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-01 13:34:43,238: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:34:43,242: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:34:43,244: INFO: common: created directory at: artifacts]
+[2023-10-01 13:34:43,245: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-01 13:48:48,487: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 13:48:48,495: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:48:48,497: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:48:48,498: INFO: common: created directory at: artifacts]
+[2023-10-01 13:48:48,498: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 13:48:48,498: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 13:48:48,624: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:48:48,624: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 13:48:48,626: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:48:48,628: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:48:48,628: INFO: common: created directory at: artifacts]
+[2023-10-01 13:48:48,628: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 13:48:48,629: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:48:48,630: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 13:48:48,632: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:48:48,633: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:48:48,634: INFO: common: created directory at: artifacts]
+[2023-10-01 13:48:48,634: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 13:48:50,463: ERROR: main: [Errno 22] Invalid argument: 'D:/ML Projects/Text-Summarization/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 34, in <module>
+    data_transformation.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_transformation.py", line 32, in convert
+    dataset_samsum_pt.save_to_disk(os.path.join(self.config.root_dir,"samsum_dataset"))
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\site-packages\datasets\dataset_dict.py", line 1279, in save_to_disk
+    dataset.save_to_disk(
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\site-packages\datasets\arrow_dataset.py", line 1533, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\site-packages\datasets\arrow_dataset.py", line 1555, in _save_to_disk_single
+    writer = ArrowWriter(
+             ^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\site-packages\datasets\arrow_writer.py", line 334, in __init__
+    self.stream = self._fs.open(fs_token_paths[2][0], "wb")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\site-packages\fsspec\spec.py", line 1241, in open
+    f = self._open(
+        ^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\site-packages\fsspec\implementations\local.py", line 184, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\site-packages\fsspec\implementations\local.py", line 315, in __init__
+    self._open()
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\site-packages\fsspec\implementations\local.py", line 320, in _open
+    self.f = open(self.path, mode=self.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'D:/ML Projects/Text-Summarization/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+[2023-10-01 13:49:59,258: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 13:49:59,260: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:49:59,262: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:49:59,263: INFO: common: created directory at: artifacts]
+[2023-10-01 13:49:59,263: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 13:50:42,387: ERROR: main: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>]
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\http\client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\http\client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\http\client.py", line 1451, in connect
+    super().connect()
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\http\client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 12, in <module>
+    data_ingestion.main()
+  File "d:\ml projects\text-summarization\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "d:\ml projects\text-summarization\src\textSummarizer\conponents\data_ingestion.py", line 17, in download_file
+    filename, headers = request.urlretrieve(
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 557, in error
+    result = self._call_chain(*args)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\Anaconda3\envs\textS\Lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[2023-10-01 13:51:08,060: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 13:51:08,062: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:51:08,063: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:51:08,064: INFO: common: created directory at: artifacts]
+[2023-10-01 13:51:08,064: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 13:51:38,576: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: DF00:893D:E4A5B:1239E2:65192C0A
+Accept-Ranges: bytes
+Date: Sun, 01 Oct 2023 08:21:31 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg1249-QPG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1696148490.260614,VS0,VE808
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9c80edf2a267e084eb79ca5d9c52369955ea3b22
+Expires: Sun, 01 Oct 2023 08:26:31 GMT
+Source-Age: 0
+
+]
+[2023-10-01 13:51:38,677: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:51:38,677: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 13:51:38,680: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:51:38,681: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:51:38,681: INFO: common: created directory at: artifacts]
+[2023-10-01 13:51:38,681: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 13:51:38,682: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:51:38,683: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 13:51:38,684: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:51:38,686: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:51:38,686: INFO: common: created directory at: artifacts]
+[2023-10-01 13:51:38,686: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 13:51:42,389: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:51:42,389: INFO: main: *******************]
+[2023-10-01 13:51:42,390: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-10-01 13:51:42,390: ERROR: main: name 'ModelTrainerTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "D:\ML Projects\Text-Summarization\main.py", line 45, in <module>
+    model_trainer = ModelTrainerTrainingPipeline()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'ModelTrainerTrainingPipeline' is not defined
+[2023-10-01 13:52:37,431: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-01 13:52:37,434: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:52:37,435: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:52:37,435: INFO: common: created directory at: artifacts]
+[2023-10-01 13:52:37,435: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-01 13:52:37,436: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-10-01 13:52:37,525: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:52:37,526: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-10-01 13:52:37,528: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:52:37,529: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:52:37,529: INFO: common: created directory at: artifacts]
+[2023-10-01 13:52:37,530: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-01 13:52:37,531: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:52:37,531: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-10-01 13:52:37,533: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:52:37,534: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:52:37,534: INFO: common: created directory at: artifacts]
+[2023-10-01 13:52:37,534: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-01 13:52:39,906: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-10-01 13:52:39,906: INFO: main: *******************]
+[2023-10-01 13:52:39,907: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-10-01 13:52:39,909: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-01 13:52:39,910: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-01 13:52:39,910: INFO: common: created directory at: artifacts]
+[2023-10-01 13:52:39,911: INFO: common: created directory at: artifacts/model_trainer]
